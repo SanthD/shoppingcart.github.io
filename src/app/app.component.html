@@ -1,0 +1,22 @@
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <div class="navbar-brand"  routerLink="/products">
+      <i class="d-inline-block fa fa-shopping-bag" style="font-size: xx-large"> ShoppingCart</i>
+    </div>
+    <div class="float-right">
+      <i routerLink="/createProduct" class="d-inline-block fa fa-plus-square-o align-text-top text-white" style="font-size:xx-large;"></i>&nbsp;
+      <i routerLink="/cart" class="d-inline-block fa fa-shopping-cart align-text-top text-white" style="font-size: xx-large">
+        <!-- {{Items.length}} -->
+      </i>&nbsp;
+      <i routerLink="/login" class="d-inline-block fa fa-user-circle align-text-top text-white" style="font-size: xx-large">
+        <!-- {{Items.length}} -->
+      </i>
+     
+    </div>
+  </div>
+</nav>
+<div class="container"> 
+  <router-outlet></router-outlet>
+</div>
+
+

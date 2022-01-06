@@ -1,0 +1,48 @@
+<!-- <p>products works!</p> -->
+
+<!-- {{products[0]|json}} -->
+
+    <!-- <div class="row">
+        <div class="col-md-4 ">
+            <!-- <div class="card" *ngFor="let item of products">
+                <div class="card-title">
+                    <span>{{item.category}}</span>
+                </div>
+                <div class="card-body">
+                    <p>{{item.title}}</p>
+                    <small class="text-justify">{{item.description}}</small>
+                </div>
+            </div> -->
+            <!-- <div class="card-group" *ngFor="let item of products">
+                <div class="card">
+                  <img  class="img-thumbnail" alt="..." src={{item.image}}>
+                  <div class="card-body">
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <p class="card-text">{{item.description}}</p>
+                    <p class="card-text"><small class="text-muted">{{item.category}}</small></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div> --> 
+
+<div class="row row-cols-1 row-cols-md-4 mt-5">
+    <div class="col md-4" *ngFor="let item of products">
+
+    <div class="card-deck  mb-3">
+      <div class="card text-center p-2">
+            <img  class="card-img-top" alt="..." src={{item.image}}>
+        <div class="card-body">
+          <h5 class="card-title">{{item.title}}</h5>
+          <div class="text-muted">{{item.category}}</div>
+          <p class="card-text text-justify">{{item.price | currency }}</p>
+          <i class="fa fa-heart text-danger"></i> addTowistlist
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary" (click)="addToCart(product)"> <i class="fa fa-shopping-cart"> AddtoCart </i></button> &nbsp;&nbsp;
+            <button class="btn btn-warning "> <i class="fa fa-flash text-white"> Buynow </i></button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>

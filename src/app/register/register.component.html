@@ -1,0 +1,146 @@
+<!-- <p>
+  registation working fine
+</p> -->
+<!-- {{registationForm.value | json}} -->
+<div class="py-5">
+  <div class="card col-md-6 mx-auto rounded-0">
+    <div class="card-header bg-primary text-white">
+      <i class="fa fa-user" style="font-size:xx-large"> Register </i>
+    </div>
+    <div class="card-body">
+    <form [formGroup]="registationForm" (ngSubmit)="registationUser()">
+        <div class="row">
+          <div class="col mb-3">
+            <label for="Name" class="form-label">Firstname </label>
+            <input type="text" formControlName="firstName" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col mb-3">
+            <label for="lastName" class="form-label">Lastname </label>
+            <input type="text"  formControlName="lastName" class="form-control" placeholder="Last lastName" aria-label="Last name">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col mb-3">
+            <label for="Email" class="form-label">Email </label>
+            <input type="text" formControlName="email" class="form-control" placeholder="Email" aria-label="First name">
+          </div>
+          <div class="col mb-3">
+            <label for="phone" class="form-label">Phone </label>
+            <input type="text" formControlName="phone" class="form-control" placeholder="Last Phone" aria-label="Last name">
+          </div>
+      </div>
+       <div class="row">
+          <div class="col mb-3">
+            <label for="password" class="form-label">Password </label>
+            <input type="password" formControlName="password" class="form-control" placeholder="Enter password" aria-label="First name">
+          </div>
+          <div class="col mb-3">
+            <label for="password" class="form-label">Confirim Password </label>
+            <input type="password" formControlName="password"  class="form-control" placeholder="Retype password" aria-label="Last name">
+          </div>
+      </div>
+      <div formGroupName="address">
+       <div class="row">
+          <div class="col mb-3">
+            <label for="street" class="form-label">Street </label>
+            <input type="text" formControlName="street" class="form-control" placeholder="street" aria-label="First name">
+          </div>
+          <div class="col mb-3">
+            <label for="password" class="form-label">City </label>
+            <input type="text" formControlName="city" class="form-control" placeholder="city" aria-label="Last name">
+          </div>
+      </div>
+       <div class="row">
+          <div class="col mb-3">
+            <label for="state" class="form-label">State </label>
+            <input type="text" formControlName="state" class="form-control" placeholder="State" aria-label="First name">
+          </div>
+          <div class="col mb-3">
+            <label for="password" class="form-label">zipcode </label>
+            <input type="text" formControlName="zipcode" class="form-control" placeholder="zipcode" aria-label="Last name">
+          </div>
+      </div>
+      </div>
+      <button type="submit"  class="btn btn-outline-primary w-100 mb-2">
+      <i class ="fa fa-paper-plane" style="font-size:x-large">&nbsp;Register </i></button>
+      <a class="text-decoration-none" routerLink="/login">Already have an account </a>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- <div class="py-5">
+  <div class="row">
+    <div class="col">
+      <div class="card col md-6 mx-auto">
+        <div class="card-header bg-primary text-white">
+          <h3>Register</h3>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-row">
+                  <i class="d-inline-block fa fa-user" style="font-size: xx-large"> Profile</i>
+                  <div class="form-group ">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group ">
+                    <label for="lastName">LastName</label>
+                    <input type="text" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group ">
+                    <label for="lastName">Email</label>
+                    <input type="email" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group ">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group ">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-row">
+                  <i class="d-inline-block fa fa-address-book" style="font-size: xx-large"> Address</i>
+                  <div class="form-group ">
+                    <label for="Street">Street</label>
+                    <input type="text" class="form-control" placeholder="Street">
+                  </div>
+                  <div class="form-group ">
+                    <label for="City">City</label>
+                    <input type="text" class="form-control" placeholder="City">
+                  </div>
+                  <div class="form-group ">
+                    <label for="State">State</label>
+                    <input type="text" class="form-control" placeholder="State">
+                  </div>
+                  <div class="form-group ">
+                    <label for="Zipcode">Zipcode</label>
+                    <input type="text" class="form-control" placeholder="Zipcode">
+                  </div>
+                  <div class="from-group mt-4">
+                    <button type="submit" class="btn btn-outline-primary w-100">
+                      <i class="d-inline-block fa fa-sign-in" style="font-size: x-large"> Register</i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div> -->
