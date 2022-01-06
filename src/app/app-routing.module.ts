@@ -13,7 +13,7 @@ import { ProductCreatingComponent } from './product-creating/product-creating.co
 const routes: Routes = [
   {
     path:" ",
-    component:ProductsComponent
+    component:LoginComponent
   },
   {
     path:"dashboard",

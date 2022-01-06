@@ -158,7 +158,7 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: " ",
-        component: _products_products_component__WEBPACK_IMPORTED_MODULE_5__["ProductsComponent"]
+        component: _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"]
     },
     {
         path: "dashboard",
